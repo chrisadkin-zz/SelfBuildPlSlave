@@ -33,7 +33,7 @@ node('master') {
     }
     stage('build dacpac') {
         bat "\"${tool name: 'Default', type: 'msbuild'}\" /p:Configuration=Release"
-        stash includes: 'SelfBuildPipelineWithSlave\\bin\\Release\\SelfBuildPipelineWithSlave.dacpac', name: 'theDacpac'
+        stash includes: 'SelfBuildPlSlave\\bin\\Release\\SelfBuildPlSlave.dacpac', name: 'theDacpac'
     }
 }
 
