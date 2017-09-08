@@ -22,7 +22,7 @@ def BranchToPort(String branchName) {
 
 def DeployDacpac() {
     def SqlPackage = "C:\\Program Files\\Microsoft SQL Server\\140\\DAC\\bin\\sqlpackage.exe"
-    def SourceFile = "SelfBuildPipeline\\bin\\Release\\SelfBuildPipeline.dacpac"
+    def SourceFile = "SelfBuildPlSlave\\bin\\Release\\SelfBuildPlSlave.dacpac"
     def ConnString = "server=${params.slaveipaddress},${BranchToPort(env.BRANCH_NAME)};database=SsdtDevOpsDemo;user id=sa;password=P@ssword1"
     
     unstash 'theDacpac'
