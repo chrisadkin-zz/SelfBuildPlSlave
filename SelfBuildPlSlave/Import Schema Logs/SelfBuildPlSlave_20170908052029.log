@@ -1,0 +1,84 @@
+08/09/2017 06:20:29	This log contains information about the import schema operation into project 'SelfBuildPlSlave' on computer 'DESKTOP-E2BAUEI' by user 'cadkin'.
+08/09/2017 06:20:29	Import of database schema has started.
+08/09/2017 06:20:34	Gathering database credentials
+08/09/2017 06:20:34	Gathering database options
+08/09/2017 06:20:34	Gathering users
+08/09/2017 06:20:34	Gathering roles
+08/09/2017 06:20:34	Gathering application roles
+08/09/2017 06:20:34	Gathering role memberships
+08/09/2017 06:20:34	Gathering filegroups
+08/09/2017 06:20:34	Gathering full-text catalogs
+08/09/2017 06:20:34	Gathering assemblies
+08/09/2017 06:20:34	Gathering certificates
+08/09/2017 06:20:34	Gathering asymmetric keys
+08/09/2017 06:20:34	Gathering symmetric keys
+08/09/2017 06:20:34	Gathering encrypted symmetric keys
+08/09/2017 06:20:34	Gathering schemas
+08/09/2017 06:20:34	Gathering XML schema collections
+08/09/2017 06:20:34	Gathering user-defined data types
+08/09/2017 06:20:34	Gathering user-defined types
+08/09/2017 06:20:34	Gathering table types
+08/09/2017 06:20:34	Gathering unique keys for table types
+08/09/2017 06:20:34	Gathering primary keys for table types
+08/09/2017 06:20:34	Gathering indexes for table types
+08/09/2017 06:20:34	Gathering check constraints for table types
+08/09/2017 06:20:34	Gathering default constraints for table types
+08/09/2017 06:20:34	Gathering partition functions
+08/09/2017 06:20:34	Gathering partition schemes
+08/09/2017 06:20:34	Gathering functions
+08/09/2017 06:20:34	Gathering encrypted functions
+08/09/2017 06:20:34	Gathering aggregates
+08/09/2017 06:20:34	Gathering procedures
+08/09/2017 06:20:34	Gathering encrypted procedures
+08/09/2017 06:20:34	Gathering tables
+08/09/2017 06:20:34	Gathering primary keys
+08/09/2017 06:20:34	Gathering unique constraints
+08/09/2017 06:20:34	Gathering foreign keys
+08/09/2017 06:20:34	Gathering default constraints
+08/09/2017 06:20:34	Gathering check constraints
+08/09/2017 06:20:34	Gathering views
+08/09/2017 06:20:34	Gathering encrypted views
+08/09/2017 06:20:34	Gathering indexes
+08/09/2017 06:20:34	Gathering statistics
+08/09/2017 06:20:34	Gathering full-text index stoplists
+08/09/2017 06:20:34	Gathering search property lists
+08/09/2017 06:20:34	Gathering search properties
+08/09/2017 06:20:34	Gathering full-text indexes
+08/09/2017 06:20:34	Gathering column store indexes
+08/09/2017 06:20:34	Gathering spatial indexes
+08/09/2017 06:20:34	Gathering XML indexes
+08/09/2017 06:20:34	Gathering Selective XML indexes
+08/09/2017 06:20:34	Gathering encrypted triggers
+08/09/2017 06:20:34	Gathering triggers
+08/09/2017 06:20:34	Gathering encrypted and clr ddl triggers
+08/09/2017 06:20:34	Gathering ddl triggers
+08/09/2017 06:20:34	Gathering synonyms
+08/09/2017 06:20:34	Gathering defaults
+08/09/2017 06:20:34	Gathering data constraint uddt bindings
+08/09/2017 06:20:34	Gathering rules
+08/09/2017 06:20:34	Gathering data constraint uddt bindings
+08/09/2017 06:20:34	Gathering message types
+08/09/2017 06:20:34	Gathering queues
+08/09/2017 06:20:34	Gathering contracts
+08/09/2017 06:20:34	Gathering services
+08/09/2017 06:20:34	Gathering event notifications
+08/09/2017 06:20:34	Gathering remote service bindings
+08/09/2017 06:20:34	Gathering broker priorities
+08/09/2017 06:20:34	Gathering signatures
+08/09/2017 06:20:34	Gathering data compression options
+08/09/2017 06:20:34	Gathering sequence types
+08/09/2017 06:20:34	Gathering security policies
+08/09/2017 06:20:34	Gather column encryption keys
+08/09/2017 06:20:34	Gathering column master keys
+08/09/2017 06:20:34	Gathering external data sources
+08/09/2017 06:20:34	Gathering external file formats
+08/09/2017 06:20:34	Gathering external tables
+08/09/2017 06:20:34	Gathering extended properties
+08/09/2017 06:20:34	Gathering credentials
+08/09/2017 06:20:34	Gathering logins
+08/09/2017 06:20:34	Gathering server audits
+08/09/2017 06:20:35	Scanning project for duplicate elements
+08/09/2017 06:20:35	Finished duplicate element processing
+08/09/2017 06:20:35	Finished importing database.
+08/09/2017 06:20:35	A summary of the import was saved to the following location: C:\Projects\SelfBuildPlSlave\SelfBuildPlSlave\Import Schema Logs\SelfBuildPlSlave_20170908052029.log
+08/09/2017 06:20:35	Click Finish to continue...
