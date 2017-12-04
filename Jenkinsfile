@@ -6,9 +6,7 @@ properties([
 ])
 
 def StartContainer() {
-    timeout(time: 20, unit: 'SECONDS') {
-        sh "docker run -e \"ACCEPT_EULA=Y\" -e \"SA_PASSWORD=P@ssword1\" --name SQLLinux${env.BRANCH_NAME} -d -i -p ${BranchToPort(env.BRANCH_NAME)}:1433 microsoft/mssql-server-linux:2017-GA && sleep 15"
-    }
+    sh "docker run -e \"ACCEPT_EULA=Y\" -e \"SA_PASSWORD=P@ssword1\" --name SQLLinux${env.BRANCH_NAME} -d -i -p ${BranchToPort(env.BRANCH_NAME)}:1433 microsoft/mssql-server-linux:2017-GA && sleep 15"
 }
 
 def BranchToPort(String branchName) {
@@ -45,7 +43,9 @@ node('master') {
 
 node( params.linuxbuildslave ) {
     stage('start container') {
-        StartContainer()
+        timeout(time: 20, unit: 'SECONDS') {
+            StartContainer()
+        }
     }
 }
 
