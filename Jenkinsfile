@@ -6,7 +6,9 @@ properties([
 ])
 
 def StartContainer() {
-    sh "docker run -e \"ACCEPT_EULA=Y\" -e \"SA_PASSWORD=P@ssword1\" --name SQLLinux${env.BRANCH_NAME} -d -i -p ${BranchToPort(env.BRANCH_NAME)}:1433 microsoft/mssql-server-linux && sleep 15"
+    timeout(time: 20, unit: 'SECONDS') {
+        sh "docker run -e \"ACCEPT_EULA=Y\" -e \"SA_PASSWORD=P@ssword1\" --name SQLLinux${env.BRANCH_NAME} -d -i -p ${BranchToPort(env.BRANCH_NAME)}:1433 microsoft/mssql-server-linux:2017-GA && sleep 15"
+    }
 }
 
 def BranchToPort(String branchName) {
@@ -31,8 +33,9 @@ def DeployDacpac() {
 
 node('master') {
     stage('git checkout') {
-        checkout scm
-        
+        timeout(time: 5, unit: 'SECONDS') {        
+            checkout scm
+        }        
     }
     stage('build dacpac') {
         bat "\"${tool name: 'Default', type: 'msbuild'}\" /p:Configuration=Release"
@@ -49,7 +52,9 @@ node( params.linuxbuildslave ) {
 node('master') {
     stage('deploy dacpac') {
         try {
-            DeployDacpac()
+            timeout(time: 60, unit: 'SECONDS') {
+                DeployDacpac()
+            }
         }
         catch (error) {
             throw error
